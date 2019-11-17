@@ -99,7 +99,6 @@ function showAnimals(animal) {
             const animalListedImg = document.createElement('img')
             animalListedImg.className = "img-fluid rounded mb-4 mb-lg-0"
             animalListedImg.src = animal.image
-            animalListedImg.alt = ""
 
             const animalListedName = document.createElement('h1')
             animalListedName.className = "font-weight-light"
@@ -117,24 +116,30 @@ function showAnimals(animal) {
             const animalListedAge = document.createElement('ul')
             animalListedAge.innerText = `Age: ${animal.age}`
 
-            const animalListedDesc = document.createElement('p')
+            const animalListedDesc = document.createElement('div')
             animalListedDesc.innerText = animal.description
+            animalListedDesc.style = 'height: 300px; overflow-y: scroll; margin: 0 0 20px 0'
 
             const optionForm = document.createElement('form')
             optionForm.className = "task-form"
 
             const selectOption = document.createElement('select')
             // const optionDefault = document.createElement('option')
+            selectOption.className = 'btn btn-secondary dropdown-toggle'
+            selectOption.style = 'margin-right: 10px;'
             const optionAdopt = document.createElement('option')
             optionAdopt.value = "Adopted"
             optionAdopt.innerText = "Adopt Animal"
+
 
             const optionFoster = document.createElement('option')
             optionFoster.value = "Fostered"
             optionFoster.innerText = "Foster Animal"
 
             const submitOption = document.createElement('input')
+            submitOption.className = 'btn btn-success'
             submitOption.type = 'submit'
+
 
             divColImg.append(animalListedImg)
             selectOption.append(optionAdopt, optionFoster)
@@ -244,30 +249,38 @@ surTab.addEventListener("click", () => {
 
         inputAnimalName.value = ""
         inputAnimalName.placeholder = "Enter a name..."
+        inputAnimalName.className = "form-control"
 
         inputSpecies.value = ""
         inputSpecies.placeholder = "Enter a Species..."
+        inputSpecies.className = "form-control"
 
         inputBreed.value = ""
         inputBreed.placeholder = "Enter a breed..."
+        inputBreed.className = "form-control"
 
         inputImage.value = ""
         inputImage.placeholder = "Enter a imgae url..."
+        inputImage.className = "form-control"
 
         inputGender.value = ""
         inputGender.placeholder = "Enter a gender..."
+        inputGender.className = "form-control"
 
         inputAge.value = ""
         inputAge.placeholder = "Enter a age..."
+        inputAge.className = "form-control"
 
         inputDesc.value = ""
         inputDesc.placeholder = "Enter a description..."
+        inputDesc.className = "form-control"
 
         surSubmit.type = "submit"
         surSubmit.name = "submit"
 
         surSubmit.innerText = "Surrender Animal"
         surSubmit.className = "submit"
+        surSubmit.className = 'btn btn-success'
         form.addEventListener('submit', () => {
             event.preventDefault()
             // debugger 

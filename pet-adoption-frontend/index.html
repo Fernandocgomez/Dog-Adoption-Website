@@ -1,139 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Front End Javascript Practice</title>
     <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src = 'src/index.js' defer></script>
-    <script src = "src/jquery/jquery.slim.min.js" defer></script>
-    <script src = "src/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src='src/index.js' defer></script>
+    <script src="src/jquery/jquery.slim.min.js" defer></script>
+    <script src="src/bootstrap/js/bootstrap.bundle.min.js" defer></script>
 
 </head>
+
 <body>
 
     <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#" id="logoNav"><img src="dog.png" width="50" height="50" ></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" id="logoNav"><img src="dog.png" width="50" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
-        <ul class="navbar-nav" id="ulNavaBar">
+            <ul class="navbar-nav" id="ulNavaBar">
 
-        <li class="nav-item active" id="homeNav">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
+                <li class="nav-item active" id="homeNav">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
 
-        <!-- <li class="nav-item">
+                <!-- <li class="nav-item">
             <a class="nav-link" href="#">My Pets</a>
         </li> -->
 
-        <li class="nav-item">
-                <a id= "surrender" class="nav-link" href="#">Surrender Dog</a>
-        </li>
+                <li class="nav-item">
+                    <a id="surrender" class="nav-link" href="#">Surrender Dog</a>
+                </li>
 
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Sign In
-            </a>
-            <div class="dropdown-menu" id="dropdownFormSignIn">
-                <form class="px-4 py-3" id="sign-in-form">
-                    <div class="form-group">
-                    <label for="exampleDropdownFormEmail1">User Name:</label>
-                    <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="user name">
-                    </div>
-                    <!-- <div class="form-group">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign In
+                    </a>
+                    <div class="dropdown-menu" style="background-color:#E8E8E8;" id="dropdownFormSignIn">
+                        <form class="px-4 py-3" id="sign-in-form">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail1">User Name:</label>
+                                <input type="text" class="form-control" id="exampleDropdownFormEmail1"
+                                    placeholder="user name">
+                            </div>
+                            <!-- <div class="form-group">
                     <label for="exampleDropdownFormPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
                     </div> -->
-                    <!-- <div class="form-group">
+                            <!-- <div class="form-group">
                     </div> -->
-                    <button type="submit" class="btn btn-success">Login</button>
-                </form>
-                <div class="dropdown-divider"></div>
-                <p class="dropdown-item" id="error-message-form"></p>
-            </div>
-        </li>
+                            <button type="submit" class="btn btn-success">Login</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <p class="dropdown-item" id="error-message-form"></p>
+                    </div>
+                </li>
 
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkSignUp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Sign up
-            </a>
-            <div class="dropdown-menu" style="width: 350px; padding: 20px; background-color:#E8E8E8;" id="formSigUpClassDropdown">
-                    <form id="sigupUser"> 
-                        <div class="form-row">
-                
-                            <div class="form-group col-md-6">
-                            <label for="inputEmail4">User Name:</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="User Name">
-                            </div>
-                
-                            <div class="form-group col-md-6">
-                            <label for="inputEmail4">First Name:</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="First Name">
-                            </div>
-                
-                        </div>
-                        
-                        <div class="form-row">
-                
-                            <div class="form-group col-md-6">
-                            <label for="inputEmail4">Last Name:</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Last Name">
-                            </div>
-                
-                            <div class="form-group col-md-6">
-                            <label for="inputEmail4">Email:</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
-                            </div>
-                
-                        </div>
-                
-                        <div class="form-row">
-                
-                            <div class="form-group col-md-6">
-                            <label for="inputEmail4">Address:</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Address">
-                            </div>
-                
-                            <div class="form-group col-md-6">
-                            <label for="inputEmail4">Phone: </label>
-                            <input type="tel" class="form-control" id="inputEmail4" placeholder="Phone">
-                            </div>
-                
-                        </div>
-                
-                        <button type="submit" class="btn btn-success">Sign Up</button>
-                
-                    </form>
-                <div class="dropdown-divider"></div>
-                
-            </div>
-        </li>
-        <li class="nav-item active" id="login-bar-name">
-            <!-- <p class="nav-link"><span>Login as:</span>Username</p> -->
-        </li>
-        <li class="nav-item active" id="login-bar-logout">
-                <!-- <p class="nav-link"><span>Login as:</span>Username</p> -->
-        </li>
-        </ul>
-    </div>
-</nav>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkSignUp" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign up
+                    </a>
+                    <div class="dropdown-menu" style="width: 350px; padding: 20px; background-color:#E8E8E8;"
+                        id="formSigUpClassDropdown">
+                        <form id="sigupUser">
+                            <div class="form-row">
 
-<!-- Page Content -->
-<div class="container">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">User Name:</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="User Name">
+                                </div>
 
-<div style="padding: 20px 20px;">
-        <!-- just to add 25px to the top and bottom -->
-</div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">First Name:</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="First Name">
+                                </div>
 
-<!-- Page Features -->
-<div id='animal-list' class="row text-center">
+                            </div>
 
-    <!-- <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="form-row">
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Last Name:</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Last Name">
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email:</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Address:</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Address">
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Phone: </label>
+                                    <input type="tel" class="form-control" id="inputEmail4" placeholder="Phone">
+                                </div>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-success">Sign Up</button>
+
+                        </form>
+                        <div class="dropdown-divider"></div>
+
+                    </div>
+                </li>
+                <li class="nav-item active" id="login-bar-name">
+                    <!-- <p class="nav-link"><span>Login as:</span>Username</p> -->
+                </li>
+                <li class="nav-item active" id="login-bar-logout">
+                    <!-- <p class="nav-link"><span>Login as:</span>Username</p> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div style="padding: 20px 20px;">
+            <!-- just to add 25px to the top and bottom -->
+        </div>
+
+        <!-- Page Features -->
+        <div id='animal-list' class="row text-center">
+
+            <!-- <div class="col-lg-3 col-md-6 mb-4">
     <div class="card h-100">
         <img class="card-img-top" src="http://placehold.it/500x325" alt="">
         <div class="card-body">
@@ -150,37 +157,38 @@
     </div>
     </div> -->
 
-</div>
+        </div>
 
 
-<!-- /.row -->
-<div id='surrenderDiv' >
-    
-</div>
+        <!-- /.row -->
+        <div id='surrenderDiv' style="width: 40%; margin: 0 auto;">
 
-<div id='animalListingDiv'>
+        </div>
 
-</div>
+        <div id='animalListingDiv'>
 
-<div id='myPetDiv' class="row text-center">
+        </div>
 
-</div>
+        <div id='myPetDiv' class="row text-center">
 
-</div>
-      <!-- /.container -->
+        </div>
 
-<div style="padding: 15px 15px;">
-            <!-- just to add 25px to the top and bottom -->
-</div>
+    </div>
+    <!-- /.container -->
+
+    <div style="padding: 15px 15px;">
+        <!-- just to add 25px to the top and bottom -->
+    </div>
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Adoption Website 2019</p>
-    </div>
-    <!-- /.container -->
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Adoption Website 2019</p>
+        </div>
+        <!-- /.container -->
     </footer>
 
-  
+
 </body>
+
 </html>
