@@ -1,4 +1,4 @@
-# Pet-Adoption
+# Dog-Adoption-Website
 Develpoers of this app: Steven Nguyen, Patrick Freeney and Fernando C Gomez De La Cruz
 
 Everything is working hopefuly
