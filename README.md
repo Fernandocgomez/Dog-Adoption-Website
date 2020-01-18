@@ -1,21 +1,41 @@
-# Dog-Adoption-Website
-Develpoers of this app: Steven Nguyen, Patrick Freeney and Fernando C Gomez De La Cruz
+# Find Me A New Home
 
-Everything is working hopefuly
+Find Me A New Home was designed to help dogs from shelters to find a new home.
 
-#If schema and seed is set already skip step 1
+#### [Click Here To See A Video Of This Project][1]
+[1]: https://youtu.be/Fzk01kf80aM "Click Here To See A Video Of This Project"
 
-#To run the code start with:
+Find Me A New Home was built using popular technologies such as: 
 
-1)go to the back end bundle install
-    -check if schema is set with rails db:migrate
-    -then seed with rails db:seed
+**Front-End**
+- JavaScript
+- HTML
+- CSS
+- Bootstrap
 
-2)cd to the frontend and type in the terminal "open index.html" to open html file
+**Back-End**
+- Ruby On Rails
+- SQLite
+- Python 
 
-3)Then cd into the backend and type "rails s" to turn on the server
+# **Website Photos**
 
-The user should be able to create a new user. To sign in only using the username.
-The user can view the home page with all the animals. Animals being displayed can be removed,
-as well as being added to the users collection of animals. By clicking on the find out more button.
-Once that is click the user can see more detail and is allow to choose to foster or adopt the animal. User can only add animals to their list of animals when a user is logged in. Once the user submit the animal is removed from the displayed list and will now be in the users my pet tab. Users surrender an animal by choosing the surrender tab and putting in information on the animal to be place on the list of all animals. User can log out as well. That's it for the app.
+**Home Page**
+
+![home page](https://i.imgur.com/l6VrudY.png "home page")
+
+**Dog Page**
+
+![Search Results](https://i.imgur.com/H3EC9ox.png "Search Results")
+
+**My Dogs Page**
+
+![event page 1](https://i.imgur.com/dia3txH.png "event page 1")
+
+**Surrender A Dog Page**
+
+![event page 2](https://i.imgur.com/smNLHjH.png "event page 2")
+
+**Credits**
+
+Develpoers of this app: Steven Nguyen, Patrick Freeney and Fernando Gomez
